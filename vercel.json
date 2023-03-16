@@ -1,16 +1,13 @@
 {
 	"version": 2,
 	"builds" : [{
-		"src": "main.js",
+		"src": "botmate.js",
 		"use": "@vercel/node"
 	}],
 	"routes": [
 		{
 			"src": "(.*)",
-			"dest": "main.js",
-                        "bin": {
-                        "botmate": "botmate.js"
-                      }
+			"dest": "botmate.js",
 		}
 	]
 }
